@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>array methods</p>
+    <script>
+        //toString():The JavaScript method toString() converts an array to a string of (comma separated) array values.
+        let shapes=['square','triangle','circle']
+        console.log(shapes.toString())
+
+        //join():The join() method also joins all array elements into a string.It behaves just like toString(), but in addition you can specify the separator:
+
+        let fruits=['apple','orange','banana']
+        console.log(fruits.join('-'))
+
+        //splice():The splice() method can be used to add new items to an array. The first parameter  defines the position where new elements should be added (spliced in).The second parameter defines how many elements should be removed.
+
+        let fruit=['mango','kiwi']
+        fruit.splice(1,0,'berry','orange')
+        console.log(fruit)
+
+        //slice(): The slice() method slices out a piece of an array into a new array.
+
+        let citrus = fruit.slice(2)
+        console.log(citrus)
+
+        //sort():The sort() method sorts an array alphabetically
+        console.log(fruit.sort())
+
+        
+    </script>
+    <p>String methods</p>
+    <script>
+        let name = 'this is an assignment question'
+        //search():The search() method searches a string for a specified value and returns the position of the match
+        console.log(name.search('is'))
+
+        //slice(): extracts a part of a string and returns the extracted part in a new string.
+        console.log(name.slice(1,3))
+
+        //substring(): similar to slice but does not accept negative values
+
+        //replace():The replace() method replaces a specified value with another value in a string The replace() method does not change the string it is called on. It returns a new string.
+        let names=name.replace("assignment","awesome")
+        console.log(names)
+
+        //trim():The trim() method removes whitespace from both sides of a string
+
+        let abccc="           hiiiiiiiiiiii    "
+        console.log(abccc.trim())
+    </script>
+    
+</body>
+</html>
